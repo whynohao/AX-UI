@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+[hidden], template {
+  display: inline;
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  //border-radius: 5px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #c7c1c1;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  //background: rgba(255, 0, 0, 0.4);
+}
+
+/* ext */
+.x-tab-bar-top > .x-tab-bar-body-default {
+  padding-bottom: 0;
+}
+
+.x-tab-bar-top > .x-tab-bar-strip-default {
+  border-width: 0;
+  height: 0;
+}
+
+/*----------------------------------------------------
+    Ext comControlConfig css
+*/
+
+.cps-table {
+  width: 480px;
+  height: 380px;
+  margin: 10px;
+  overflow: auto;
+}
+
+.cps-sel-div {
+  width: 110px;
+  height: 60px;
+}
+
+.cps-sel-div:hover {
+  border: 1px solid blueviolet;
+}
+
+.cps-sel-icon {
+  display: block;
+  text-align: center;
+  height: 35px;
+}
+
+.cps-sel-icon > img {
+  width: 30px;
+  height: 30px;
+  margin-top: 3px;
+}
+
+.cps-sel-span {
+  width: 110px;
+  height: 25px;
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/*----------------------------------------------------
+    Ext CPSConfigureWindow css
+*/
+.cps-x-panel > .x-panel-header-default {
+  background-image: none;
+  background-color: #bed5e5 !important;
+  border-color: #bed5e5 !important;
+}
+
+.cps-x-panel .x-panel-header-title-default {
+  color: #065888 !important;
+  background-color: #bed5e5 !important;
+}
+
+.cps-x-tip-top-default, .cps-x-tip-bottom-default {
+  //padding: 5px !important;
+  background-color: #f7f8db !important;
+  border: 1px solid #d2c06c !important;
+  box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 3px !important;
+  position: absolute !important;
+  z-index: 9990 !important;
+}
+
+.x-css-shadow {
+  z-index: 9990 !important;
+}
+
+.cps-x-tip-top-default > .x-tip-anchor {
+  border: 5px solid transparent;
+  border-bottom-color: #f7f8db;
+}
+
+.cps-x-tip-bottom-default > .x-tip-anchor {
+  border-width: 8px;
+  border-top-color: #f7f8db;
+}
+
+.cps-controls-layout {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.cps-controls-layout-main {
+  flex: 1;
+  background-color: #eceff4;
+  border-left: 1px solid #b7d0e2;
+  border-right: 1px solid #b7d0e2;
+}
+
+.cps-controls-layout-aside {
+  width: 200px;
+}
+
+.cps-controls-layout > .layout__aside:not(:first-child),
+.cps-controls-layout > .layout__main:not(:first-child) {
+  margin-left: 10px;
+}
+
+.cps-controls-sidebar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.cps-controls-sidebar > li {
+  margin: 0;
+  padding: 0;
+  line-height: 35px;
+  width: 100%;
+}
+
+.cps-controls-title {
+  font-size: 18px;
+  color: #065888;
+  font-weight: bold;
+  padding-left: 5px;
+  background-color: #bed5e5;
+  cursor: pointer;
+  height: 35px;
+  line-height: 35px;
+}
+
+.cps-controls-angle {
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin-right: 10px;
+  color: #ffffff !important;
+  margin-left: 90px;
+}
+
+.cps-controls-openimg {
+  transform: rotate(-90deg);
+}
+
+.cps-controls-table {
+  width: 100%;
+  height: auto;
+  padding-left: 5px;
+  background-color: #ffffff;
+}
+
+.cps-controls-td {
+  margin-top: 5px;
+  padding: 5px;
+  z-index: 9999;
+  display: table;
+}
+
+.cps-controls-region {
+  //background-color: #ffffff;
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+}
+
+.cps-controls-region:hover {
+  background-color: #d8e7f3 !important;
+  cursor: move;
+}
+
+.cps-controls-icon {
+  margin-top: 2px;
+}
+
+.cps-controls-span {
+  line-height: 16px;
+  height: 16px;
+}
+
+.cps-controls-layout-tips {
+  display: none;
+}
+
+.cps-loading {
+  z-index: 1000000;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.cps-loading > .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 40px;
+  color: #000;
+  font-size: 40px;
+}
